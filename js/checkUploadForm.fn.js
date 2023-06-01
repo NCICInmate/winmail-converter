@@ -3,7 +3,7 @@ function checkUploadForm() {
     return true;
   }
   else {
-    alert("Sie haben keine Datei ausgewählt!");
+    alert("You have not selected a file!");
     return false;
   }
 }
