@@ -85,7 +85,7 @@ if (isset($_FILES['userfile'])) {
   $attachments = getAttachments($_FILES['userfile']['tmp_name']);
   if (empty($attachments)) {
     $_SESSION['success'] = false;
-    $_SESSION['info'] = "Keine Anhänge enthalten.";
+    $_SESSION['info'] = "File contains no attachments";
     redirect("./");
   }
 
