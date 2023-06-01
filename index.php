@@ -26,11 +26,11 @@ if (isset($_SESSION['success']) && $_SESSION['success'] === false) {
 }
 ?>
 
-<html lang="de">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 
-	<title>Winmail.dat-Umwandler</title>
+	<title>Winmail.dat-Converter</title>
 	<meta name="description" content="Small web application to extract attachments from winmail.dat files">
 	<meta name="author" content="Kevin Köllmann <mail@kevinkoellmann.de>">
 
@@ -42,7 +42,7 @@ if (isset($_SESSION['success']) && $_SESSION['success'] === false) {
 	<section id="wrapper">
 		<div class="container">
 			<div class="rectangle">
-				<h2>Winmail.dat-Umwandler</h2>
+				<h2>Winmail.dat-Converter</h2>
 				<div class="left_cor"></div>
 				<div class="right_cor"></div>
 			</div>
@@ -52,10 +52,10 @@ if (isset($_SESSION['success']) && $_SESSION['success'] === false) {
 				<form enctype="multipart/form-data" action="convert.php" method="POST" onSubmit="return checkUploadForm();">
 					<!-- Der Name des Input-Felds bestimmt den Namen im $_FILES-Array -->
 					<p>
-						Diese Datei hochladen:<br/>
+						Upload File:<br/>
 						<input name="userfile" id="userfile" type="file" accept=".dat" />
 					</p>
-					<p><input type="submit" value="Datei hochladen" /></p>
+					<p><input type="submit" value="Upload" /></p>
 				</form>
 			</div>
 		</div>
